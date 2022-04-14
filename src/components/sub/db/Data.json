@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "name": "youjin",
+      "Department": "CEO",
+      "pic": "member1.jpg"
+    },
+    {
+      "name": "lirly",
+      "Department": "Marketing",
+      "pic": "member2.jpg"
+    },
+    {
+      "name": "tom",
+      "Department": "Marketing",
+      "pic": "member3.jpg"
+    },
+    {
+      "name": "des",
+      "Department": "Production",
+      "pic": "member4.jpg"
+    },
+    {
+      "name": "Kim",
+      "Department": "Production",
+      "pic": "member5.jpg"
+    },
+    {
+      "name": "Emma",
+      "Department": "Production",
+      "pic": "member6.jpg"
+    },
+    {
+      "name": "gely",
+      "Department": "Production",
+      "pic": "member8.jpg"
+    },
+    {
+      "name": "sweet",
+      "Department": "Production",
+      "pic": "member9.jpg"
+    }
+  ]
+}

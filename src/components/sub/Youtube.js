@@ -1,0 +1,53 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+function Youtube() {
+	const [open, setOpen] = useState(false);
+	//팝업의 생성유무를 관리하는  state생성
+
+	const [index, setIndex] = useState(0);
+
+	const [items, setItems] = useState([]);
+
+	const key = 'AIzaSyAe6OhSffw-vmxuH8EI06jlMQPu0gCV7xs';
+	const num = 6;
+	const playListId = 'PLSGs9D6sndZf2JAmaS-YSDJj_e9idSilg';
+	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`;
+	useEffect(() => {
+		axios.get(url).then((json) => {
+			console.log(json.data.items);
+			setItems(json.data.items);
+		});
+	}, []);
+
+	console.log(items);
+
+	return (
+		<section className='youtube'>
+			<figure>
+				<div className='inner'>
+					<h1>Youtube</h1>
+				</div>
+				<div className='youtubeList'>
+					{items.map((item, idx) => {
+						const desc = item.snippet.description;
+						return (
+							<article key={idx} className='card'>
+								<div className='wrap'>
+									<img src={item.snippet.thumbnails.medium.url} />
+									<h2>{item.snippet.title}</h2>
+									<p>
+										{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}
+									</p>
+									<span>{item.snippet.publishedAt}</span>
+								</div>
+							</article>
+						);
+					})}
+				</div>
+			</figure>
+		</section>
+	);
+}
+
+export default Youtube;
