@@ -1,0 +1,27 @@
+.Popup {
+	width: 100%;
+	height: 100vh;
+	padding: 10vh 10vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	.iframe {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.9);
+		padding: 5vw;
+		z-index: 3px;
+
+		span {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: orange;
+			cursor: pointer;
+		}
+	}
+}

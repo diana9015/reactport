@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Popup from '../common/Popup';
 
 function Youtube() {
 	const [open, setOpen] = useState(false);
@@ -23,30 +24,46 @@ function Youtube() {
 	console.log(items);
 
 	return (
-		<section className='youtube'>
-			<figure>
-				<div className='inner'>
-					<h1>Youtube</h1>
-				</div>
-				<div className='youtubeList'>
-					{items.map((item, idx) => {
-						const desc = item.snippet.description;
-						return (
-							<article key={idx} className='card'>
-								<div className='wrap'>
-									<img src={item.snippet.thumbnails.medium.url} />
-									<h2>{item.snippet.title}</h2>
-									<p>
-										{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}
-									</p>
-									<span>{item.snippet.publishedAt}</span>
-								</div>
-							</article>
-						);
-					})}
-				</div>
-			</figure>
-		</section>
+		<>
+			<section className='youtube'>
+				<figure>
+					<div className='inner'>
+						<h1>Youtube</h1>
+					</div>
+					<div className='youtubeList'>
+						{items.map((item, idx) => {
+							const desc = item.snippet.description;
+							return (
+								<article
+									key={idx}
+									className='card'
+									onClick={() => setOpen(true)}>
+									<div className='wrap'>
+										<img src={item.snippet.thumbnails.medium.url} />
+										<h2>{item.snippet.title}</h2>
+										<p>
+											{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}
+										</p>
+										<span>{item.snippet.publishedAt}</span>
+									</div>
+								</article>
+							);
+						})}
+					</div>
+				</figure>
+			</section>
+
+			{open ? (
+				<Popup setOpen={setOpen}>
+					<iframe
+						src={
+							'https://www.youtube.com/embed/' +
+							items[index].snippet.resourceId.videoId
+						}
+						frameBorder='0'></iframe>
+				</Popup>
+			) : null}
+		</>
 	);
 }
 
