@@ -56,10 +56,7 @@ function Youtube() {
 			{open ? (
 				<Popup setOpen={setOpen}>
 					<iframe
-						src={
-							'https://www.youtube.com/embed/' +
-							items[index].snippet.resourceId.videoId
-						}
+						src={'https://www.youtube.com/embed/'}
 						frameBorder='0'></iframe>
 				</Popup>
 			) : null}
