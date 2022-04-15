@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactpf/static/css/main.7edecff0.css",
+    "main.js": "/reactpf/static/js/main.c5a3d409.js",
+    "index.html": "/reactpf/index.html",
+    "main.7edecff0.css.map": "/reactpf/static/css/main.7edecff0.css.map",
+    "main.c5a3d409.js.map": "/reactpf/static/js/main.c5a3d409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7edecff0.css",
+    "static/js/main.c5a3d409.js"
+  ]
+}
