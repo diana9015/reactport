@@ -21,8 +21,6 @@ function Youtube() {
 		});
 	}, []);
 
-	console.log(items);
-
 	return (
 		<>
 			<section className='youtube'>
@@ -56,7 +54,10 @@ function Youtube() {
 			{open ? (
 				<Popup setOpen={setOpen}>
 					<iframe
-						src={'https://www.youtube.com/embed/'}
+						src={
+							'https://www.youtube.com/embed/' +
+							items[index].snippet.resourceId.videoId
+						}
 						frameBorder='0'></iframe>
 				</Popup>
 			) : null}
