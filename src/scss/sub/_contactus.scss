@@ -1,26 +1,10 @@
-.contactus {
+.map {
 	width: 100%;
 	height: 100%;
+	margin: 50px auto;
 
-	figure {
-		width: 1180px;
-		height: 100%;
-		margin: 50px auto;
-
-		.inner {
-			width: 100%;
-			text-align: center;
-			height: 50px;
-
-			h1 {
-				font: bold 25px/1 'arial';
-				color: gray;
-			}
-		}
-
-		#map {
-			width: 100%;
-			height: 300px;
-		}
+	#map {
+		width: 100%;
+		height: 300px;
 	}
 }

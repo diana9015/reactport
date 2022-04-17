@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Layout from '../common/Layout';
 import abc from './db/Data.json';
 
 console.log(abc);
@@ -10,26 +11,25 @@ function Member() {
 	const [datas, setDatas] = useState(abc.data);
 
 	return (
-		<section className='member'>
-			<figure>
-				<div className='inner'>
-					<h1>Member</h1>
-				</div>
-				<ul className='memberList'>
-					{datas.map((data, idx) => {
-						return (
-							<li key={idx}>
-								<div class='wrap'>
+		<Layout name='Members'>
+			<ul className='memberList'>
+				{datas.map((data, idx) => {
+					return (
+						<li key={idx}>
+							<div className='wrap'>
+								<div className='pic'>
 									<img src={`${path}/img/${data.pic}`} />
+								</div>
+								<div className='pro'>
 									<h2>{data.name}</h2>
 									<p>{data.Department}</p>
 								</div>
-							</li>
-						);
-					})}
-				</ul>
-			</figure>
-		</section>
+							</div>
+						</li>
+					);
+				})}
+			</ul>
+		</Layout>
 	);
 }
 

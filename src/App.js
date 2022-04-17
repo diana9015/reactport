@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Popup from './components/common/Popup';
+import Layout from './components/common/Layout';
 
 //sub
 import Aboutus from './components/sub/Aboutus';
@@ -12,7 +13,7 @@ import Community from './components/sub/Community';
 import Contactus from './components/sub/Contactus';
 import Member from './components/sub/Member';
 import Join from './components/sub/Join';
-import Product from './components/sub/Product';
+
 import Youtube from './components/sub/Youtube';
 import Gallery from './components/sub/Gallery';
 //main
@@ -43,14 +44,15 @@ function App() {
 
 			<Route path='/join' component={Join} />
 
-			<Route path='/product' component={Product} />
-
 			<Route path='/youtube' component={Youtube} />
 
 			<Route path='/gallery' component={Gallery} />
+
+			<Route path='/layout' component={Layout} />
 
 			<Footer />
 		</>
 	);
 }
+
 export default App;

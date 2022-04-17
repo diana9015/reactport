@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Layout from '../common/Layout';
 import Popup from '../common/Popup';
 
 function Youtube() {
@@ -22,35 +23,22 @@ function Youtube() {
 	}, []);
 
 	return (
-		<>
-			<section className='youtube'>
-				<figure>
-					<div className='inner'>
-						<h1>Youtube</h1>
-					</div>
-					<div className='youtubeList'>
-						{items.map((item, idx) => {
-							const desc = item.snippet.description;
-							return (
-								<article
-									key={idx}
-									className='card'
-									onClick={() => setOpen(true)}>
-									<div className='wrap'>
-										<img src={item.snippet.thumbnails.medium.url} />
-										<h2>{item.snippet.title}</h2>
-										<p>
-											{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}
-										</p>
-										<span>{item.snippet.publishedAt}</span>
-									</div>
-								</article>
-							);
-						})}
-					</div>
-				</figure>
-			</section>
-
+		<Layout name='Youtube'>
+			<div className='youtubeList'>
+				{items.map((item, idx) => {
+					const desc = item.snippet.description;
+					return (
+						<article key={idx} className='card' onClick={() => setOpen(true)}>
+							<div className='wrap'>
+								<img src={item.snippet.thumbnails.medium.url} />
+								<h2>{item.snippet.title}</h2>
+								<p>{desc.length > 150 ? desc.substr(0, 150) + '...' : desc}</p>
+								<span>{item.snippet.publishedAt}</span>
+							</div>
+						</article>
+					);
+				})}
+			</div>
 			{open ? (
 				<Popup setOpen={setOpen}>
 					<iframe
@@ -61,7 +49,7 @@ function Youtube() {
 						frameBorder='0'></iframe>
 				</Popup>
 			) : null}
-		</>
+		</Layout>
 	);
 }
 

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import Layout from '../common/Layout';
 
 function Contactus() {
 	const container = useRef(null);
@@ -16,16 +17,12 @@ function Contactus() {
 	}, []);
 
 	return (
-		<section className='contactus'>
-			<figure>
-				<div className='inner'>
-					<h1>Contactus</h1>
-				</div>
-				찾아오는길
+		<Layout name='Contact us'>
+			<div className='map'>
 				{/* container객체를 해당 가상돔에 참조 */}
 				<div id='map' ref={container}></div>
-			</figure>
-		</section>
+			</div>
+		</Layout>
 	);
 }
 

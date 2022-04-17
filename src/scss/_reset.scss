@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0px;
+	box-sizing: border-box;
 }
 ul,
 ol,
@@ -9,5 +10,5 @@ li {
 }
 
 a {
-	text-decoration: 0;
+	text-decoration: none;
 }

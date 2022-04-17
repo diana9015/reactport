@@ -25,11 +25,6 @@ function Header() {
 								Join
 							</NavLink>
 						</li>
-						<li>
-							<a href='#' className='logopen'>
-								Log in
-							</a>
-						</li>
 					</ul>
 				</div>
 				<div className='nav'>
@@ -39,11 +34,6 @@ function Header() {
 						</NavLink>
 					</h1>
 					<ul>
-						<li>
-							<NavLink to='/product' activeStyle={active}>
-								Product
-							</NavLink>
-						</li>
 						<li>
 							<NavLink to='/gallery' activeStyle={active}>
 								Gallery
