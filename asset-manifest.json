@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/reactport/static/css/main.12fa85c5.css",
-    "main.js": "/reactport/static/js/main.a5516178.js",
+    "main.css": "/reactport/static/css/main.3155552c.css",
+    "main.js": "/reactport/static/js/main.8ad32f7e.js",
     "static/media/work3.jpg": "/reactport/static/media/work3.c41824f4734d4f55a2b8.jpg",
     "static/media/interior.jpg": "/reactport/static/media/interior.6ec130d488c4f3470f47.jpg",
-    "static/media/member2.jpg": "/reactport/static/media/member2.42ee24a5d0688bef372c.jpg",
+    "static/media/main3.jpg": "/reactport/static/media/main3.438d56667258df663fd2.jpg",
     "index.html": "/reactport/index.html",
-    "main.12fa85c5.css.map": "/reactport/static/css/main.12fa85c5.css.map",
-    "main.a5516178.js.map": "/reactport/static/js/main.a5516178.js.map"
+    "main.3155552c.css.map": "/reactport/static/css/main.3155552c.css.map",
+    "main.8ad32f7e.js.map": "/reactport/static/js/main.8ad32f7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.12fa85c5.css",
-    "static/js/main.a5516178.js"
+    "static/css/main.3155552c.css",
+    "static/js/main.8ad32f7e.js"
   ]
 }
