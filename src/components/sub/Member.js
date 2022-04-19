@@ -12,42 +12,23 @@ function Member() {
 
 	return (
 		<Layout name='Members'>
-			<div className='member'>
-				<div className='text'>
-					<div className='box'>
-						<h2>Our team</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-							porro pariatur ab rem, placeat, ex exercitationem incidunt aliquam
-							odio eveniet eius odit sunt est saepe id atque optio recusandae
-							corrupti.
-						</p>
-						<br />
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non amet
-							placeat sequi voluptatem inventore ipsa sapiente dolorum commodi
-							vitae libero!
-						</p>
-					</div>
-				</div>
-				<ul className='memberList'>
-					{datas.map((data, idx) => {
-						return (
-							<li key={idx}>
-								<div className='wrap'>
-									<div className='pic'>
-										<img src={`${path}/img/${data.pic}`} />
-									</div>
-									<div className='pro'>
-										<h3>{data.name}</h3>
-										<p>{data.Department}</p>
-									</div>
+			<ul className='memberList'>
+				{datas.map((data, idx) => {
+					return (
+						<li key={idx}>
+							<div className='wrap'>
+								<div className='pic'>
+									<img src={`${path}/img/${data.pic}`} />
 								</div>
-							</li>
-						);
-					})}
-				</ul>
-			</div>
+								<div className='pro'>
+									<h2>{data.name}</h2>
+									<p>{data.Department}</p>
+								</div>
+							</div>
+						</li>
+					);
+				})}
+			</ul>
 		</Layout>
 	);
 }

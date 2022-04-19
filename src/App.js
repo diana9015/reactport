@@ -26,15 +26,16 @@ function App() {
 	return (
 		<>
 			<Switch>
-				<Header />
-				<Visual />
-				<Content />
-
 				<Route exact path='/'>
+					<Header />
 					<Visual />
-					<Content />
+				</Route>
+
+				<Route path='/'>
+					<Header />
 				</Route>
 			</Switch>
+
 			<Route path='/aboutus' component={Aboutus} />
 			<Route path='/community' component={Community} />
 
@@ -49,6 +50,10 @@ function App() {
 			<Route path='/gallery' component={Gallery} />
 
 			<Route path='/layout' component={Layout} />
+
+			<Route path='/visual' component={Visual} />
+
+			<Route path='/content' component={Content} />
 
 			<Footer />
 		</>

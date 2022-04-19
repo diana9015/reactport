@@ -10,6 +10,28 @@ function Community() {
 		{ title: 'Hello1', content: 'Here comes description in detail.' },
 	];
 	const [posts, setPosts] = useState(dummyPosts);
+
+	const resetPost = () => {
+		input.current.value = '';
+		textarea.current.value = '';
+	};
+
+	//post추가 함수
+	const createPost = () => {
+		setPosts([
+			{ title: input.current.value, content: textarea.current.value },
+			...posts,
+		]);
+		resetPost();
+	};
+
+	//post삭제 함수
+	const deletePost = (index) => {
+		console.log('삭제할 포스트 순번', index);
+
+		setPosts(posts.filter((post, idx) => idx !== index));
+	};
+
 	return (
 		<Layout name='Community'>
 			<div className='commu'>
@@ -44,6 +66,11 @@ function Community() {
 								<article key={idx}>
 									<h2>{post.title}</h2>
 									<p>{post.content}</p>
+
+									<div className='btns'>
+										{/* 순서1- 삭제버튼 클릭시 삭제포스트의 순서값 전달 */}
+										<button onClick={() => deletePost(idx)}>delete</button>
+									</div>
 								</article>
 							);
 						})}

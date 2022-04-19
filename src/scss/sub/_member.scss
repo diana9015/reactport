@@ -1,95 +1,55 @@
-.member {
+.memberList {
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
 
-	.text {
-		width: 100%;
-		height: 400px;
-		background: url(../img/member2.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		.box {
-			width: 800px;
-			height: 300px;
-			align-items: center;
-			top: 50%;
-			left: 50%;
-			position: relative;
-			padding: 50px;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			background: rgba(0, 0, 0, 0.6);
+	li {
+		width: 295px;
+		height: 380px;
+		flex-direction: column;
+		margin-bottom: 80px;
+		.wrap {
+			width: 100%;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			h2 {
-				font: bold 30px/1.3 'arial';
-				color: lightgray;
-				margin-bottom: 30px;
+
+			.pic {
+				width: 100%;
+				margin: auto auto;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
 			}
-			p {
-				font: normal 17px/1.2 'arial';
-				color: lightgray;
+
+			.pro {
+				background: rgb(227, 227, 227);
+				width: 50px;
+				height: 100%;
+				text-align: center;
+				display: flex;
+				margin: 20px auto;
+				flex-direction: column;
+				justify-content: space-between;
 			}
 		}
-	}
 
-	.memberList {
-		margin-top: 80px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-
-		li {
-			width: 295px;
+		.wrap::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 255px;
 			height: 380px;
-			flex-direction: column;
-			margin-bottom: 80px;
-			.wrap {
-				width: 100%;
-				height: 100%;
-				display: flex;
-				flex-direction: column;
-
-				.pic {
-					width: 100%;
-					margin: auto auto;
-
-					img {
-						width: 100%;
-						height: 100%;
-					}
-				}
-
-				.pro {
-					background: rgb(227, 227, 227);
-					width: 50px;
-					height: 100%;
-					text-align: center;
-					display: flex;
-					margin: 20px auto;
-					flex-direction: column;
-					justify-content: space-between;
-				}
-			}
-
-			.wrap::after {
-				content: '';
-				display: block;
-				position: absolute;
-				width: 255px;
-				height: 380px;
-				transition: 0.4s;
-				margin: 20px;
-			}
-			&:hover ::after {
-				cursor: pointer;
-				border: 5px solid grey;
-				box-sizing: border-box;
-			}
+			transition: 0.4s;
+			margin: 20px;
+		}
+		&:hover ::after {
+			cursor: pointer;
+			border: 5px solid grey;
+			box-sizing: border-box;
 		}
 	}
 }
