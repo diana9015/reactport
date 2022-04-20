@@ -55,6 +55,7 @@
 			justify-content: space-between;
 			position: relative;
 			margin-bottom: 50px;
+
 			.box1 {
 				height: 600px;
 				margin-top: 100px;
@@ -65,6 +66,7 @@
 				img {
 					width: 100%;
 					height: 100%;
+					filter: grayscale(0.7);
 				}
 
 				.pic1 {
@@ -123,11 +125,15 @@
 
 		.serv {
 			width: 100%;
-			height: 600px;
+			height: 700px;
 			background: black;
 			margin: 0 auto;
+			position: relative;
 			.wrap {
-				padding-top: 100px;
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
 				width: 1180px;
 				margin: 0 auto;
 				h2 {
@@ -137,8 +143,116 @@
 				}
 				h3 {
 					font: bold 40px/1.2 'arial';
-					margin-bottom: 25px;
+					margin-bottom: 50px;
 					color: White;
+				}
+				.box {
+					width: 100%;
+					height: 100%;
+					display: flex;
+
+					article {
+						width: 365px;
+						height: 300px;
+						border: 1px solid rgb(43, 43, 43);
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+		.banner {
+			width: 100%;
+			height: 600px;
+			display: flex;
+			position: relative;
+
+			article {
+				width: 100%;
+				height: 100%;
+
+				&:nth-of-type(1) {
+					background-image: url(../img/square.jpg);
+					background-position: center;
+					background-size: cover;
+				}
+
+				&:nth-of-type(2) {
+					background-image: url(../img/interior.jpg);
+					background-position: center;
+					background-size: cover;
+				}
+
+				&:nth-of-type(3) {
+					background-image: url(../img/furniture.jpg);
+					background-position: center;
+					background-size: cover;
+				}
+
+				.wrap {
+					width: 100%;
+					height: 100%;
+					background: rgba(0, 0, 0, 0.6);
+					position: relative;
+
+					.plus {
+						display: none;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font: normal 50px/1 'arial';
+						color: white;
+					}
+
+					h3 {
+						bottom: 30px;
+						left: 30px;
+						position: absolute;
+						color: white;
+					}
+
+					&:hover {
+						transition: 0.5s;
+						background: rgba(0, 0, 0, 0.8);
+						cursor: pointer;
+						.plus {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		.news {
+			width: 100%;
+			height: 800px;
+			margin: 0 auto;
+			position: relative;
+			.wrap {
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				width: 1180px;
+				margin: 0 auto;
+				h2 {
+					font: bold 15px/1.3 'arial';
+					margin-bottom: 25px;
+				}
+				h3 {
+					font: bold 40px/1.2 'arial';
+					margin-bottom: 50px;
+				}
+				.box {
+					width: 100%;
+					height: 100%;
+					display: flex;
+
+					article {
+						width: 365px;
+						height: 400px;
+						margin-right: 20px;
+						background: yellow;
+					}
 				}
 			}
 		}

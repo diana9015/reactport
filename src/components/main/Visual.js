@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Visual() {
 	const path = process.env.PUBLIC_URL;
@@ -59,10 +61,59 @@ function Visual() {
 							<br />
 							SERVICE
 						</h3>
-						<article></article>
-						<article></article>
-						<article></article>
-						<article></article>
+						<div className='box'>
+							<article></article>
+							<article></article>
+							<article></article>
+							<article></article>
+						</div>
+					</div>
+				</div>
+				<div className='banner'>
+					<article>
+						<div className='wrap'>
+							<FontAwesomeIcon icon={faPlus} className='plus' />
+							<h3>
+								SQUARE BULDING
+								<br />
+								PROJECTS
+							</h3>
+						</div>
+					</article>
+					<article>
+						<div className='wrap'>
+							<FontAwesomeIcon icon={faPlus} className='plus' />
+							<h3>
+								OUR INTERIORS
+								<br />
+								PROJECTS
+							</h3>
+						</div>
+					</article>
+					<article>
+						<div className='wrap'>
+							<FontAwesomeIcon icon={faPlus} className='plus' />
+							<h3>
+								FURNITURE DESIGN
+								<br />
+								PROJECTS
+							</h3>
+						</div>
+					</article>
+				</div>
+				<div className='news'>
+					<div className='wrap'>
+						<h2>BLOG</h2>
+						<h3>
+							SOME OF OUR LATEST
+							<br />
+							NEWS
+						</h3>
+						<div className='box'>
+							<article></article>
+							<article></article>
+							<article></article>
+						</div>
 					</div>
 				</div>
 			</div>
