@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/reactport/static/css/main.93899042.css",
-    "main.js": "/reactport/static/js/main.e6898b0e.js",
+    "main.css": "/reactport/static/css/main.d0316bf0.css",
+    "main.js": "/reactport/static/js/main.675bb6b3.js",
+    "static/media/furniture.jpg": "/reactport/static/media/furniture.256086a96b04fd95a1a2.jpg",
     "static/media/work3.jpg": "/reactport/static/media/work3.c41824f4734d4f55a2b8.jpg",
-    "static/media/interior.jpg": "/reactport/static/media/interior.6ec130d488c4f3470f47.jpg",
+    "static/media/square.jpg": "/reactport/static/media/square.81181dba394506a94d90.jpg",
+    "static/media/interior.jpg": "/reactport/static/media/interior.349f363a0343bdbcb22f.jpg",
+    "static/media/join.jpg": "/reactport/static/media/join.6ec130d488c4f3470f47.jpg",
     "static/media/main3.jpg": "/reactport/static/media/main3.438d56667258df663fd2.jpg",
     "index.html": "/reactport/index.html",
-    "main.93899042.css.map": "/reactport/static/css/main.93899042.css.map",
-    "main.e6898b0e.js.map": "/reactport/static/js/main.e6898b0e.js.map"
+    "main.d0316bf0.css.map": "/reactport/static/css/main.d0316bf0.css.map",
+    "main.675bb6b3.js.map": "/reactport/static/js/main.675bb6b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.93899042.css",
-    "static/js/main.e6898b0e.js"
+    "static/css/main.d0316bf0.css",
+    "static/js/main.675bb6b3.js"
   ]
 }
