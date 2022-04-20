@@ -40,13 +40,12 @@ function Visual() {
 							team that is proud of work
 						</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-							consequatur eaque reprehenderit assumenda mollitia eveniet
-							aliquam, necessitatibus vero illo commodi fugit officiis nostrum
-							rerum, beatae, exercitationem at. Nihil voluptatum optio dolores
-							non vero sed iste dolor molestiae alias nostrum recusandae
-							voluptatem unde facilis eum officiis iure sit, illo sequi
-							mollitia?
+							Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+							dolor sit amet. consequatur eaque reprehenderit assumenda mollitia
+							eveniet aliquam, necessitatibus vero illo commodi fugit officiis
+							nostrum rerum, beatae, exercitationem at. Nihil voluptatum optio
+							dolores non vero sed iste dolor molestiae alias nostrum
+							recusandaesit, illo sequi mollitia?
 						</p>
 						<button>READ MORE</button>
 					</div>
@@ -110,10 +109,59 @@ function Visual() {
 							NEWS
 						</h3>
 						<div className='box'>
-							<article></article>
-							<article></article>
-							<article></article>
+							<article>
+								<div className='pic'>
+									<img src={`${path}/img/bottom1.jpg`} />
+								</div>
+								<div className='text'>
+									<h4>SOMETHING I NEED TO TELL YOU</h4>
+									<h2>MAY 16, 2022</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Nihil, vel!
+									</p>
+								</div>
+							</article>
+							<article>
+								<div className='pic'>
+									<img src={`${path}/img/bottom2.jpg`} />
+								</div>
+								<div className='text'>
+									<h4>ARE YOU DOING THE WRIGHT WAY?</h4>
+									<h2>MAY 01, 2022</h2>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Corporis dolore odio, accusamus pariatur
+									</p>
+								</div>
+							</article>
+							<article>
+								<div className='pic'>
+									<img src={`${path}/img/bottom3.jpg`} />
+								</div>
+
+								<div className='text'>
+									<h4> WHY YOU SHOULD ALWAYS FIRST</h4>
+									<h2>MARCH 20, 2022</h2>
+									<p>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Iure doloremque adipisci exercitationem commodi molestias.
+									</p>
+								</div>
+							</article>
 						</div>
+						<button>READ MORE</button>
+					</div>
+				</div>
+				<div className='contact'>
+					<div className='wrap'>
+						<h3>LET'S WORK TOGETHER</h3>
+						<h2>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							<br /> Explicabo necessitatibus commodi ratione cupiditate debitis
+							provident excepturi odit, delectus voluptatem iste?
+						</h2>
+						<button>READ MORE</button>
 					</div>
 				</div>
 			</div>

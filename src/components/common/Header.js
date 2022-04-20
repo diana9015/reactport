@@ -12,7 +12,7 @@ function Header() {
 			<div className='wrap'>
 				<h1>
 					<NavLink exact to='/' activeStyle={active}>
-						Cosmetic
+						Variamain.
 					</NavLink>
 				</h1>
 				<FontAwesomeIcon icon={faBars} className='bars' />

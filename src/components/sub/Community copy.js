@@ -34,7 +34,7 @@ function Community() {
 
 	return (
 		<Layout name='Community'>
-			<div className='com'>
+			<div className='commu'>
 				<div className='box'>
 					<div className='inputBox'>
 						<input type='text' placeholder='제목을 입력하세요' ref={input} />

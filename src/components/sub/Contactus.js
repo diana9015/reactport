@@ -17,10 +17,69 @@ function Contactus() {
 	}, []);
 
 	return (
-		<Layout name='Contact us'>
-			<div className='map'>
-				{/* container객체를 해당 가상돔에 참조 */}
-				<div id='map' ref={container}></div>
+		<Layout name='Contactus'>
+			<div className='contact'>
+				<div className='map'>
+					{/* container객체를 해당 가상돔에 참조 */}
+					<div id='map' ref={container}></div>
+				</div>
+
+				<div className='box'>
+					<div className='info'>
+						<h3>Contact Info:</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+							mollitia a quasi dolorem doloremque fuga velit atque. Fugit quas
+							itaque ullam repellendus quam, nemo aut dicta delectus consequatur
+							non voluptates officia sit ea. Blanditiis assumenda at, magni
+							facilis.
+						</p>
+						<h4>
+							<span>Address:</span>10111 Santa Monica Boiulevard, LA
+						</h4>
+						<h4>
+							<span>Phone:</span>+44 987 065 908
+						</h4>
+						<h4>
+							<span>Email</span>info@Example.com
+						</h4>
+						<h4>
+							<span>Fax:</span>+44 987 065 909
+						</h4>
+					</div>
+					<div className='getin'>
+						<h3>Get in Touch:</h3>
+						<fieldset>
+							<legend>contact form</legend>
+							<form action='#'>
+								<input
+									type='text'
+									name='name'
+									id='name'
+									placeholder='YOUR NAME'
+								/>
+								<input
+									type='email'
+									id='email'
+									name='email'
+									placeholder='YOUR EMAIL'
+								/>
+								<input
+									type='text'
+									name='title'
+									id='title'
+									placeholder='YOUR TITLE'
+								/>
+								<textarea
+									cols='30'
+									rows='20'
+									name='comment'
+									value='YOUR COMMENT'></textarea>
+								<input type='submit' value='SEND MESSAGE' />
+							</form>
+						</fieldset>
+					</div>
+				</div>
 			</div>
 		</Layout>
 	);

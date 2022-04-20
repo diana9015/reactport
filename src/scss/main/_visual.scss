@@ -35,7 +35,7 @@
 					h2 {
 						font: bold 15px/1 'arial';
 						color: white;
-						margin-bottom: 15px;
+						margin-bottom: 14px;
 					}
 
 					h3 {
@@ -99,7 +99,7 @@
 				justify-content: center;
 				padding: 0px 100px;
 				h2 {
-					font: bold 15px/1.3 'arial';
+					font: bold 14px/1.3 'arial';
 					margin-bottom: 25px;
 				}
 				h3 {
@@ -107,7 +107,7 @@
 					margin-bottom: 25px;
 				}
 				p {
-					font: normal 15px/1.3 'arial';
+					font: normal 14px/1.3 'arial';
 					margin-bottom: 25px;
 				}
 
@@ -118,7 +118,7 @@
 					border: 1px solid black;
 					background: none;
 					cursor: pointer;
-					font: bold 15px/1.3 'arial';
+					font: bold 14px/1.3 'arial';
 				}
 			}
 		}
@@ -137,7 +137,7 @@
 				width: 1180px;
 				margin: 0 auto;
 				h2 {
-					font: bold 15px/1.3 'arial';
+					font: bold 14px/1.3 'arial';
 					margin-bottom: 25px;
 					color: White;
 				}
@@ -191,7 +191,7 @@
 				.wrap {
 					width: 100%;
 					height: 100%;
-					background: rgba(0, 0, 0, 0.6);
+					background: rgba(0, 0, 0, 0.7);
 					position: relative;
 
 					.plus {
@@ -213,7 +213,7 @@
 
 					&:hover {
 						transition: 0.5s;
-						background: rgba(0, 0, 0, 0.8);
+						background: rgba(0, 0, 0, 0.9);
 						cursor: pointer;
 						.plus {
 							display: block;
@@ -224,8 +224,7 @@
 		}
 		.news {
 			width: 100%;
-			height: 800px;
-			margin: 0 auto;
+			height: 850px;
 			position: relative;
 			.wrap {
 				top: 50%;
@@ -235,7 +234,7 @@
 				width: 1180px;
 				margin: 0 auto;
 				h2 {
-					font: bold 15px/1.3 'arial';
+					font: bold 14px/1.3 'arial';
 					margin-bottom: 25px;
 				}
 				h3 {
@@ -246,13 +245,90 @@
 					width: 100%;
 					height: 100%;
 					display: flex;
+					padding-bottom: 50px;
+					justify-content: space-between;
 
-					article {
-						width: 365px;
-						height: 400px;
+					> article {
+						width: 100%;
+						height: 100%;
 						margin-right: 20px;
-						background: yellow;
+						.pic {
+							width: 380px;
+							height: 180px;
+							img {
+								width: 100%;
+								height: 100%;
+								filter: grayscale(0.2);
+							}
+						}
+						.text {
+							padding: 20px;
+							width: 100%;
+
+							h4 {
+								font: bold 17px/1.3 'arial';
+								margin-bottom: 10px;
+							}
+							h2 {
+								font: bold 14px/1.3 'arial';
+								margin-bottom: 10px;
+							}
+						}
 					}
+				}
+				button {
+					margin: 0 auto;
+					width: 150px;
+					display: block;
+					padding: 10px 10px;
+					border: 1px solid black;
+					background: none;
+					cursor: pointer;
+					font: bold 14px/1.3 'arial';
+				}
+			}
+		}
+		.contact {
+			width: 100%;
+			height: 460px;
+			background: url(../img/bottom_main.jpg);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+
+			.wrap {
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.8);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+
+				h2 {
+					width: 50%;
+					font: normal 14px/1.5 'arial';
+					margin-bottom: 25px;
+					color: white;
+				}
+				h3 {
+					width: 50%;
+					font: bold 40px/1.2 'arial';
+					margin-bottom: 25px;
+					color: white;
+				}
+				button {
+					margin: 0 auto;
+					width: 150px;
+					display: block;
+					padding: 10px 10px;
+					border: 1px solid white;
+					background: none;
+					cursor: pointer;
+					font: bold 14px/1.3 'arial';
+					color: white;
 				}
 			}
 		}

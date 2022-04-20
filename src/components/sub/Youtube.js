@@ -12,7 +12,7 @@ function Youtube() {
 	const [items, setItems] = useState([]);
 
 	const key = 'AIzaSyAe6OhSffw-vmxuH8EI06jlMQPu0gCV7xs';
-	const num = 6;
+	const num = 10;
 	const playListId = 'PLSGs9D6sndZf2JAmaS-YSDJj_e9idSilg';
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`;
 	useEffect(() => {
@@ -28,7 +28,13 @@ function Youtube() {
 				{items.map((item, idx) => {
 					const desc = item.snippet.description;
 					return (
-						<article key={idx} className='card' onClick={() => setOpen(true)}>
+						<article
+							key={idx}
+							className='card'
+							onClick={() => {
+								setOpen(true);
+								setIndex(idx);
+							}}>
 							<div className='wrap'>
 								<img src={item.snippet.thumbnails.medium.url} />
 								<h2>{item.snippet.title}</h2>
