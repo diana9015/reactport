@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/reactport/static/css/main.45a3dc47.css",
-    "main.js": "/reactport/static/js/main.45dc8157.js",
-    "static/media/work3.jpg": "/reactport/static/media/work3.c41824f4734d4f55a2b8.jpg",
+    "main.css": "/reactport/static/css/main.75b4aee5.css",
+    "main.js": "/reactport/static/js/main.6d510d50.js",
     "static/media/square.jpg": "/reactport/static/media/square.81181dba394506a94d90.jpg",
     "static/media/furniture.jpg": "/reactport/static/media/furniture.add5890c59e56ba8aa3a.jpg",
     "static/media/interior.jpg": "/reactport/static/media/interior.349f363a0343bdbcb22f.jpg",
@@ -10,11 +9,11 @@
     "static/media/main3.jpg": "/reactport/static/media/main3.438d56667258df663fd2.jpg",
     "static/media/bottom_main.jpg": "/reactport/static/media/bottom_main.181e5132eb7f9b29884d.jpg",
     "index.html": "/reactport/index.html",
-    "main.45a3dc47.css.map": "/reactport/static/css/main.45a3dc47.css.map",
-    "main.45dc8157.js.map": "/reactport/static/js/main.45dc8157.js.map"
+    "main.75b4aee5.css.map": "/reactport/static/css/main.75b4aee5.css.map",
+    "main.6d510d50.js.map": "/reactport/static/js/main.6d510d50.js.map"
   },
   "entrypoints": [
-    "static/css/main.45a3dc47.css",
-    "static/js/main.45dc8157.js"
+    "static/css/main.75b4aee5.css",
+    "static/js/main.6d510d50.js"
   ]
 }
