@@ -50,8 +50,8 @@ function Header() {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to='/community' activeStyle={active}>
-									Community
+								<NavLink to='/news' activeStyle={active}>
+									News
 								</NavLink>
 							</li>
 							<li>

@@ -9,7 +9,7 @@ import Layout from './components/common/Layout';
 
 //sub
 import Aboutus from './components/sub/Aboutus';
-import Community from './components/sub/Community';
+import News from './components/sub/News';
 import Contactus from './components/sub/Contactus';
 import Member from './components/sub/Member';
 import Join from './components/sub/Join';
@@ -37,7 +37,7 @@ function App() {
 			</Switch>
 
 			<Route path='/aboutus' component={Aboutus} />
-			<Route path='/community' component={Community} />
+			<Route path='/news' component={News} />
 
 			<Route path='/contactus' component={Contactus} />
 
