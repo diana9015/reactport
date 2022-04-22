@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 function Visual() {
 	const path = process.env.PUBLIC_URL;
@@ -47,7 +48,9 @@ function Visual() {
 							dolores non vero sed iste dolor molestiae alias nostrum
 							recusandaesit, illo sequi mollitia?
 						</p>
-						<button>READ MORE</button>
+						<button>
+							<NavLink to='/aboutus'>READ MORE</NavLink>
+						</button>
 					</div>
 				</div>
 				<div
