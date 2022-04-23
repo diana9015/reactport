@@ -141,6 +141,78 @@ function Aboutus() {
 						</div>
 					</div>
 				</div>
+				<div className='journal'>
+					<div className='title'>
+						<h2>From the Journal</h2>
+					</div>
+					<div className='wrap'>
+						<article>
+							<div className='pic'>
+								<img src={`${path}/img/journal1.jpg`} />
+							</div>
+							<div className='text'>
+								<h3>Lorem ipsum dolor sit amet.</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequatur nemo iure vitae fugiat aperiam suscipit eveniet
+									adipisci unde delectus praesentium!
+								</p>
+							</div>
+						</article>
+						<article>
+							<div className='pic'>
+								<img src={`${path}/img/journal2.jpg`} />
+							</div>
+							<div className='text'>
+								<h3>Lorem ipsum dolor sit amet.</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequatur nemo iure vitae fugiat aperiam suscipit eveniet
+									adipisci unde delectus praesentium!
+								</p>
+							</div>
+						</article>
+						<article>
+							<div className='pic'>
+								<img src={`${path}/img/journal3.jpg`} />
+							</div>
+							<div className='text'>
+								<h3>Lorem ipsum dolor sit amet.</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequatur nemo iure vitae fugiat aperiam suscipit eveniet
+									adipisci unde delectus praesentium!
+								</p>
+							</div>
+						</article>
+						<article>
+							<div className='pic'>
+								<img src={`${path}/img/journal4.jpg`} />
+							</div>
+							<div className='text'>
+								<h3>Lorem ipsum dolor sit amet.</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequatur nemo iure vitae fugiat aperiam suscipit eveniet
+									adipisci unde delectus praesentium!
+								</p>
+							</div>
+						</article>
+						<article>
+							<div className='pic'>
+								<img src={`${path}/img/journal5.jpg`} />
+							</div>
+							<div className='text'>
+								<h3>Lorem ipsum dolor sit amet.</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Consequatur nemo iure vitae fugiat aperiam suscipit eveniet
+									adipisci unde delectus praesentium!
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
 			</div>
 		</Layout>
 	);
